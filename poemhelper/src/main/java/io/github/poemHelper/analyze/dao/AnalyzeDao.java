@@ -20,5 +20,5 @@ public interface AnalyzeDao {
     查询所有的诗文，提供给业务层进行分析
      */
     List<PoetryInfo> queryAllPoetryInfo();
-
+    void clear();
 }

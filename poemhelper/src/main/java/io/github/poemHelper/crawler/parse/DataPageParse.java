@@ -2,7 +2,6 @@ package io.github.poemHelper.crawler.parse;
 
 import com.gargoylesoftware.htmlunit.html.*;
 import io.github.poemHelper.crawler.common.Page;
-import io.github.poemHelper.analyze.entity.PoetryInfo;
 
 /**
  * 详情页面解析

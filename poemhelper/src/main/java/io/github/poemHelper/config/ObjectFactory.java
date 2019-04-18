@@ -86,6 +86,8 @@ public final class ObjectFactory {
         dataSource.setPassword(configProperties.getDbPassword());
         dataSource.setDriverClassName(configProperties.getDbDriverClass());
         dataSource.setUrl(configProperties.getDbUrl());
+        AnalyzeDao clearDb=new AnalyzeDaoImpl(dataSource);
+        clearDb.clear();
         objectHashMap.put(DataSource.class, dataSource);
     }
 

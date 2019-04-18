@@ -15,15 +15,7 @@ import java.net.MalformedURLException;
  */
 public class Test {
     public static void main(String[] args) {
-        try(WebClient webClient=new WebClient(BrowserVersion.CHROME)){
-            webClient.getOptions().setJavaScriptEnabled(false);
-            HtmlPage htmlPage=webClient.getPage("https://www.gushiwen.org/");
-            HtmlElement htmlElement=htmlPage.getBody();
-            String text=htmlElement.asText();
-            System.out.println(text);
-        }  catch (IOException e) {
-            e.printStackTrace();
-        }
+
     }
 
 }

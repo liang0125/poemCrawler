@@ -53,7 +53,6 @@ function creationRanking(id) {
         }
     });
 }
-
 function cloudWorld(id) {
     $.get({
         url: "/analyze/word_cloud",

@@ -71,4 +71,17 @@ public class AnalyzeDaoImpl implements AnalyzeDao {
         }
         return datas;
     }
+
+    @Override
+    public void clear() {
+        String sql ="delete from poetry_info;";
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql);
+        ){
+             statement.executeUpdate();
+            } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
 }

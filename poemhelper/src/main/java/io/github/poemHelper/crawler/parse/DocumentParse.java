@@ -5,6 +5,7 @@ import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.DomNodeList;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import io.github.poemHelper.config.ConfigProperties;
 import io.github.poemHelper.crawler.common.Page;
 
 import java.io.IOException;
